@@ -1,4 +1,7 @@
-.searchbar {
+/*
+ * Стили компонента Searchbar
+ */
+.Searchbar {
   top: 0;
   left: 0;
   position: sticky;
@@ -17,7 +20,10 @@
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
-.form {
+/*
+   * Стили компонента SearchForm
+   */
+.SearchForm {
   display: flex;
   align-items: center;
   width: 100%;
@@ -27,13 +33,13 @@
   overflow: hidden;
 }
 
-.button {
+.SearchForm_button {
   display: inline-block;
   width: 48px;
   height: 48px;
   border: 0;
-  background-image: url('https://toppng.com/uploads/preview/search-icon-customer-icon-11564158924ifw7wyjtfu.png');
-  background-size: 70%;
+  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.6;
@@ -42,11 +48,11 @@
   outline: none;
 }
 
-.button:hover {
+.SearchForm_button:hover {
   opacity: 1;
 }
 
-.buttonLabel {
+.SearchForm_button_label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -58,7 +64,7 @@
   border: 0;
 }
 
-.input {
+.SearchForm_input {
   display: inline-block;
   width: 100%;
   font: inherit;
@@ -69,7 +75,7 @@
   padding-right: 4px;
 }
 
-.input::placeholder {
+.SearchForm_input::placeholder {
   font: inherit;
   font-size: 18px;
 }

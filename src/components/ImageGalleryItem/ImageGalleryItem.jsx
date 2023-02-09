@@ -1,15 +1,15 @@
-import s from './ImageGalleryItem.module.css';
+import styles from './ImageGalleryItem.module.css';
 import PropTypes from 'prop-types';
 
 const ImageGallryItem = ({ pictureData, onClick }) => {
   return pictureData.map(picture => (
     <li
       key={picture.id}
-      className={s.ImageGalleryItem}
+      className={styles.ImageGalleryItem}
       onClick={() => onClick(picture.largeImageURL)}
     >
       <img
-        className={s.ImageGalleryItemImage}
+        className={styles.ImageGalleryItemImage}
         src={picture.webformatURL}
         alt=""
       />

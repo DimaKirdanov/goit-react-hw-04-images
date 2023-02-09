@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import s from './Searchbar.module.css';
+import styles from './Searchbar.module.css';
 
 export default function Searchbar({ onSubmit }) {
   const [pictureName, setPictureName] = useState('');
@@ -19,14 +19,14 @@ export default function Searchbar({ onSubmit }) {
   };
 
   return (
-    <header className={s.Searchbar}>
+    <header className={styles.Searchbar}>
       <Toaster />
-      <form onSubmit={handleSubmit} className={s.SearchForm}>
-        <button type="submit" className={s.SearchFormButton}>
-          <span className={s.SearchFormButtonLabel}>Search</span>
+      <form onSubmit={handleSubmit} className={styles.SearchForm}>
+        <button type="submit" className={styles.SearchFormButton}>
+          <span className={styles.SearchFormButtonLabel}>Search</span>
         </button>
         <input
-          className={s.SearchFormInput}
+          className={styles.SearchFormInput}
           value={pictureName}
           onChange={handleSearchChange}
           type="text"

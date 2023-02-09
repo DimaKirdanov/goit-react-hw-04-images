@@ -1,8 +1,8 @@
-import s from './ImageGallery.module.css';
+import styles from './ImageGallery.module.css';
 import PropTypes from 'prop-types';
 
 const ImageGallery = ({ children }) => (
-  <ul className={s.ImageGallery}>{children}</ul>
+  <ul className={styles.ImageGallery}>{children}</ul>
 );
 
 export default ImageGallery;

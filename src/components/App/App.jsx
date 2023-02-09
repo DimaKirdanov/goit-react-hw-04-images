@@ -6,7 +6,7 @@ import LoaderSpiner from '../Loader';
 import Modal from '../Modal';
 import LoadMore from '../Button';
 import api from 'servises/api';
-import s from './App.module.css';
+import styles from './App.module.css';
 
 const Status = {
   LOADING: 'loading',
@@ -31,6 +31,7 @@ export default function App() {
       .then(res => {
         setPictureData(state => [...state, ...res.data.hits]);
         setStatus(Status.LOADED);
+        
       })
       .catch(error => console.log(error))
       .finally(scrollToBottom);
@@ -54,7 +55,7 @@ export default function App() {
   };
 
   return (
-    <div className={s.App}>
+    <div className={styles.App}>
       <Searchbar onSubmit={handleFormSubmit} />
       {status === Status.LOADING && <LoaderSpiner />}
       {pictureData.length > 0 && (
